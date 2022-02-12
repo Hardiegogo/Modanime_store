@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://modinate-ui.netlify.app/CSS_files/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css_files/cart_page.css">
+
+    <title>Modanime-store</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class='navbar'>
+            <div class="header-left">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/naruto-sign.png" />
+                <a>
+                    <h3>Modanime-store</h3>
+                </a>
+            </div>
+            <div class="searchbar">
+                <label for="product_search">
+                    <input placeholder="Search product" class="input input-primary" id="product_search" type="text">
+                </label>
+            </div>
+
+
+
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li>
+                            <button><i class='bx bx-log-in-circle icons'></i></button>
+                        </li>
+                        <li>
+                            <div class="badge-wrapper">
+                                <a href="./wishlist_page.html"><i class='bx bx-heart icons'></i></a>
+                                <div class="badge btn-badge">4</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-wrapper">
+                                <a href="./cart_page.html"><i class='bx bx-cart-alt icons'></i></a>
+                                <div class="badge btn-badge">1</div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="content">
+            <h2 class="center-text">My Cart</h2>
+            <div class="cart-container grid-2 p-24 mt-24">
+
+                <div class="card horizontal card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img hz-card-img" src="../assets/goku.jpeg"
+                            alt="">
+                        <div class="card-right p-16">
+                            <div class="card-heading">
+                                <h3>Goku Action figure</h3>
+                                <p class="small-text semi-bold mt-8px">₹2000</p>
+                                <p class="x-small-text">Quantity:<button class="btn btn-quant-secondary">-</button><span>1</span><button class="btn btn-quant-primary">+</button> </p>
+                                
+                            </div>
+
+                            <div class="card-footer">
+                                <button class="btn btn-secondary">Remove from cart</button>
+                                <button class="btn btn-secondary-outline">Move to wishlist</button>
+                            </div>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart-bill p-24 card-shadow">
+                    <h3>Price details</h3>
+                    <div class="cart-content mt-16 border-top-grey">
+                        <div class="cart-detail p-8px">
+                            <p class="x-small-text">Price 1 item</p>
+                            <p class="x-small-text">2000</p>
+                        </div>
+                        <div class="cart-detail p-8px">
+                            <p class="x-small-text">Discount</p>
+                            <p class="x-small-text">-500</p>
+                        </div>
+                        <div class="cart-detail p-8px">
+                            <p class="x-small-text">Delivery charges</p>
+                            <p class="x-small-text">50</p>
+                        </div>
+                        <div class="cart-detail border-y-grey p-8px">
+                            <p class="x-small-text bold">Total amount</p>
+                            <p class="x-small-text bold">1550</p>
+                        </div>
+
+                    </div>
+                    <footer class="cart-footer mt-16">
+                        <p class="x-small-text">You will save ₹500 on this order</p>
+                        <button class="btn btn-primary btn-cart mt-1">Place order</button>
+                    </footer>
+                </div>
+
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

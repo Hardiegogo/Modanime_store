@@ -1,0 +1,15 @@
+@import "./product_page.css";
+
+.app{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'navbar'
+    'content'
+    'footer'
+    ;
+}
+
+.content{
+    text-align: center;
+}
+
