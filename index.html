@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://modinate-ui.netlify.app/CSS_files/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css_files/product_page.css">
+
+    <title>Modanime-store</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class='navbar'>
+            <div class="header-left">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/naruto-sign.png" />
+                <a>
+                    <h3>Modanime-store</h3>
+                </a>
+            </div>
+            <div class="searchbar">
+                <label for="product_search">
+                    <input placeholder="Search product" class="input input-primary" id="product_search" type="text">
+                </label>
+            </div>
+
+
+
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li>
+                            <button><i class='bx bx-log-in-circle icons'></i></button>
+                        </li>
+                        <li>                
+                            <div class="badge-wrapper">
+                                <button><i class='bx bx-heart icons'></i></button>
+                                <div class="badge btn-badge">4</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-wrapper">
+                                <button><i class='bx bx-cart-alt icons'></i></button>
+                                <div class="badge btn-badge">1</div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <aside class="sidebar p-24">
+            <div class="filters-header">
+                <h3>Filters</h3>
+                <button class="link-secondary x-small-text">Clear</button>
+            </div>
+            <div class="slider-container mt-32">
+                <h3>Price</h3>
+                <input type="range" min="1" max="100" value="50" class="slider mt-16" id="price_range"
+                    list="price_range">
+            </div>
+            <div class="category-container mt-32">
+                <h3>Categories</h3>
+                <div class="category mt-16 x-small-text">
+                    <input type="checkbox" id="male-figures" name="male-figuress" checked>
+                <label for="male-figures">Male figures</label>
+                </div>
+                <div class="category x-small-text">
+                    <input type="checkbox" id="female-figures" name="female-figures">
+                <label for="female-figures">Female figures</label>
+                </div>
+                
+            </div>
+            <div class="ratings-container mt-32">
+                <h3>Ratings</h3>
+                <div class="rating mt-16 x-small-text">
+                    <input type="radio" id="stars_4" name="ratings" checked>
+                <label for="stars_4">4 stars and above</label>
+                </div>
+                <div class="rating x-small-text">
+                    <input type="radio" id="stars_3" name="ratings">
+                <label for="stars_3">3 stars and above</label>
+                </div>
+                <div class="rating x-small-text">
+                    <input type="radio" id="stars_2" name="ratings">
+                <label for="stars_2">2 stars and above</label>
+                </div>
+                <div class="rating x-small-text">
+                    <input type="radio" id="stars_1" name="ratings">
+                <label for="stars_1">1 star and above</label>
+                </div>
+            </div>
+
+            <div class="sort-filter-container mt-32">
+                <h3>Sort by</h3>
+                <div class="sort x-small-text">
+                    <input type="radio" id="low-to-high" name="sort_by">
+                <label for="low-to-high">Price:Low to high</label>
+                </div>
+                <div class="sort x-small-text">
+                    <input type="radio" id="high-to-low" name="sort_by">
+                <label for="high-to-low">Price:High to ligh</label>
+                </div>
+
+            </div>
+        </aside>
+        <main class="content">
+            <h3>Showing all products</h3>
+            <div class="products-container mt-24">
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="./assets/goku.jpeg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company xyz</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-dismiss">
+                            <i class='bx bx-heart btn-icon-secondary'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="./assets/Naruto.jpg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company 1</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-dismiss">
+                            <i class='bx bx-heart btn-icon-secondary'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="./assets/goku.jpeg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company 1</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-dismiss">
+                            <i class='bx bx-heart btn-icon-secondary'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="./assets/Naruto.jpg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company 1</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-dismiss">
+                            <i class='bx bx-heart btn-icon-secondary'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="./assets/goku.jpeg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company 1</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-dismiss">
+                            <i class='bx bx-heart btn-icon-secondary'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="./assets/Naruto.jpg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company 1</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-dismiss">
+                            <i class='bx bx-heart btn-icon-secondary'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
