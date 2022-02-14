@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://modinate-ui.netlify.app/CSS_files/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css_files/auth_page.css">
+
+    <title>Modanime-store</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class='navbar'>
+            <div class="header-left">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/naruto-sign.png" />
+                <a>
+                    <h3>Modanime-store</h3>
+                </a>
+            </div>
+            <div class="searchbar">
+                <label for="product_search">
+                    <input placeholder="Search product" class="input input-primary" id="product_search" type="text">
+                </label>
+            </div>
+
+
+
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li>
+                            <button><i class='bx bx-log-in-circle icons'></i></button>
+                        </li>
+                        <li>
+                            <div class="badge-wrapper">
+                                <a href="./wishlist_page.html"><i class='bx bx-heart icons'></i></a>
+                                <div class="badge btn-badge">4</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="badge-wrapper">
+                                <a href="./cart_page.html"><i class='bx bx-cart-alt icons'></i></a>
+                                <div class="badge btn-badge">1</div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <main class="content">
+            <div class="auth-container card-shadow p-24">
+                <form>
+                    <h3 class="center-text">Signup</h3>
+                    <label for="username">
+                        <h4 class="mt-16">Email:</h4>
+                        <input class="input input-primary" id="username" type="email">
+                    </label>
+                    <h4 class="mt-16">Password:</h4>
+                    <input class="input input-primary" id="user-password" type="password">
+                    </label>
+                    <div class="auth_options mt-16">
+                        <label for="remember-me x-small-text">
+                            <input type="checkbox" id="remember-me">
+                            I accept all terms and conditions.
+                        </label>
+
+
+                    </div>
+                    <button class="btn btn-primary mt-16">Create a new account</button>
+                    <a href="./login_page.html" class="link-secondary center-text mt-1">Already have an account ></a>
+                </form>
+
+
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
