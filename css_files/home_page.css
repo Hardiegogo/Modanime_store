@@ -96,6 +96,7 @@ body{
 .grid-category{
   grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
   gap: 3rem;
+  justify-items: center;
 }
 
 .category{
@@ -130,4 +131,15 @@ body{
   padding:var(--lg-space);
   display: grid;
   place-items: center;
+}
+
+@media screen and (max-width:600px) {
+  .hero{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .category{
+    max-width: 30rem;
+  }
 }
