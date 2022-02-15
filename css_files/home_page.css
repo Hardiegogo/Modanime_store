@@ -138,8 +138,19 @@ body{
     display: flex;
     flex-direction: column-reverse;
   }
-
+  .hero-left-content{
+    text-align: center;
+  }
+  .btn-hero{
+    margin: auto;
+    margin-top: 1rem;
+  }
   .category{
     max-width: 30rem;
+  }
+  .grid-category{
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 3rem;
+    justify-items: center;
   }
 }
