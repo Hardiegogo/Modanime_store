@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://modinate-ui.netlify.app/CSS_files/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="../css_files/home_page.css">
+    <link rel="stylesheet" href="../css_files/product_page.css">
+
     <title>Modanime-store</title>
 </head>
 
@@ -22,8 +23,8 @@
         <header class='navbar'>
             <div class="header-left">
                 <img src="https://img.icons8.com/ios-filled/50/ffffff/naruto-sign.png" />
-                <a>
-                    <a href="../index.html"><h3>Modanime-store</h3></a>
+                <a href="../index.html">
+                    <h3>Modanime-store</h3>
                 </a>
             </div>
             <div class="searchbar">
@@ -38,17 +39,17 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="./pages/login_page.html"><i class='bx bx-log-in-circle icons'></i></a>
+                            <a href="./login_page.html"><i class='bx bx-log-in-circle icons'></i></a>
                         </li>
-                        <li>
+                        <li>                
                             <div class="badge-wrapper">
-                                <a href="./pages/wishlist_page.html"><i class='bx bx-heart icons'></i></a>
+                                <a href="./wishlist_page.html"><i class='bx bx-heart icons'></i></a>
                                 <div class="badge btn-badge">4</div>
                             </div>
                         </li>
                         <li>
                             <div class="badge-wrapper">
-                                <a href="./pages/cart_page.html"><i class='bx bx-cart-alt icons'></i></a>
+                                <a href="./cart_page.html"><i class='bx bx-cart-alt icons'></i></a>
                                 <div class="badge btn-badge">1</div>
                             </div>
                         </li>
@@ -56,72 +57,65 @@
                 </nav>
             </div>
         </header>
-        <main class="content p-64">
-            <div class="hero grid-2">
 
-                <div class="hero-left">
-                    <div class="hero-left-content">
-                        <h1>One place <br> for all your <br> <span class="prime-heading">Anime</span>-wishes.</h1>
-                        <a href="./pages/product_page.html" class='btn-large btn-primary btn-hero mt-24 medium-text'>Go to products</a>
-                    </div>
-
-                </div>
-                <div class="hero-right">
-                    <img src="../assets/hero_illus_2.png" class="resp-img" alt="">
-
-                </div>
-
-
-
-
+        <aside class="sidebar p-24">
+            <div class="filters-header">
+                <h3>Filters</h3>
+                <button class="link-secondary x-small-text">Clear</button>
             </div>
-            <h2 class="mt-64">Categories</h2>
-            <div class="categories-list grid-auto-fit grid-category mt-24">
-                <div class="category grid-2 card-shadow br-m">
-                    <div class="category-left">
-                        <img src="../assets/ac_fig.jpg" class="resp-img" alt="">
-                    </div>
-                    <div class="category-right">
-                        <p class="x-small-text">New Arrivals</p>
-                        <div class="card-title">
-                            <h2>Action figures</h2>
-                            <p class="xx-small-text grey-text">Get the best action figures collection here from:
-                                Naruto,DBZ, one piece and many more</p>
-                        </div>
-
-                    </div>
+            <div class="slider-container mt-32">
+                <h3>Price</h3>
+                <input type="range" min="1" max="100" value="50" class="slider mt-16" id="price_range"
+                    list="price_range">
+            </div>
+            <div class="category-container mt-32">
+                <h3>Categories</h3>
+                <div class="category mt-16 x-small-text">
+                    <input type="checkbox" id="male-figures" name="male-figuress" checked>
+                <label for="male-figures">Male figures</label>
                 </div>
-                <div class="category grid-2 card-shadow br-m">
-                    <div class="category-left">
-                        <img src="../assets/tshirt.jpg" class="resp-img" alt="">
-                    </div>
-                    <div class="category-right">
-                        <p class="x-small-text">New Arrivals</p>
-                        <div class="card-title">
-                            <h2>T-shirts</h2>
-                            <p class="xx-small-text grey-text">Get the best T-shirts collection here from:
-                                Naruto,DBZ, one piece and many more</p>
-                        </div>
-
-                    </div>
+                <div class="category x-small-text">
+                    <input type="checkbox" id="female-figures" name="female-figures">
+                <label for="female-figures">Female figures</label>
                 </div>
-                <div class="category grid-2 card-shadow br-m">
-                    <div class="category-left ">
-                        <img src="../assets/masks.jpg" class="resp-img " alt="">
-                    </div>
-                    <div class="category-right">
-                        <p class="x-small-text">New Arrivals</p>
-                        <div class="card-title">
-                            <h2>Masks</h2>
-                            <p class="xx-small-text grey-text">Get the best masks collection here from:
-                                Naruto,DBZ, one piece and many more</p>
-                        </div>
-
-                    </div>
+                
+            </div>
+            <div class="ratings-container mt-32">
+                <h3>Ratings</h3>
+                <div class="rating mt-16 x-small-text">
+                    <input type="radio" id="stars_4" name="ratings" checked>
+                <label for="stars_4">4 stars and above</label>
+                </div>
+                <div class="rating x-small-text">
+                    <input type="radio" id="stars_3" name="ratings">
+                <label for="stars_3">3 stars and above</label>
+                </div>
+                <div class="rating x-small-text">
+                    <input type="radio" id="stars_2" name="ratings">
+                <label for="stars_2">2 stars and above</label>
+                </div>
+                <div class="rating x-small-text">
+                    <input type="radio" id="stars_1" name="ratings">
+                <label for="stars_1">1 star and above</label>
                 </div>
             </div>
-            <h2 class="mt-64">Best sellers</h2>
-            <div class="product-list grid-auto-fit mt-24">
+
+            <div class="sort-filter-container mt-32">
+                <h3>Sort by</h3>
+                <div class="sort x-small-text">
+                    <input type="radio" id="low-to-high" name="sort_by">
+                <label for="low-to-high">Price:Low to high</label>
+                </div>
+                <div class="sort x-small-text">
+                    <input type="radio" id="high-to-low" name="sort_by">
+                <label for="high-to-low">Price:High to ligh</label>
+                </div>
+
+            </div>
+        </aside>
+        <main class="content">
+            <h3>Showing all products</h3>
+            <div class="products-container mt-24">
                 <div class="card card-shadow">
                     <div class="card-content badge-wrapper">
                         <img class="resp-img card-img-top-br product-img card-img" src="../assets/goku.jpeg" alt="">
@@ -198,37 +192,54 @@
                         <button class="btn btn-primary-outline primary-2">Add to cart</button>
                     </div>
                 </div>
-            </div>
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="../assets/goku.jpeg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company 1</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-top-right-icon">
+                            <i class='bx bx-heart icon-heart'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
+                <div class="card card-shadow">
+                    <div class="card-content badge-wrapper">
+                        <img class="resp-img card-img-top-br product-img card-img" src="../assets/Naruto.jpg" alt="">
+                        <div class="card-heading">
+                            <h4>Naruto Action figure</h4>
+                            <p>by Company 1</p>
+                        </div>
+                        <div class="badge card-badge">
+                            New
+                        </div>
+                        <div class="badge card-top-right-icon">
+                            <i class='bx bx-heart icon-heart'></i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-primary-outline primary-2">Add to cart</button>
+                    </div>
+                </div>
 
+
+
+
+            </div>
         </main>
         <footer class="footer">
-            <h4>Made by Chirag Gupta</h4>
-            <nav>
-                <ul class="spaced-list spaced-list-icons mt-1">
-                    <li>
-                        <a href="https://twitter.com/Chirag__dev">
-                            <i class='bx bxl-twitter social-icons'></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Hardiegogo/Modinate_UI">
-                            <i class='bx bxl-github social-icons'></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/chirag-dev/">
-                            <i class='bx bxl-linkedin social-icons'></i>
-                        </a>
-                    </li>
-                </ul>
-
-            </nav>
-
 
         </footer>
     </div>
-
 
 </body>
 
